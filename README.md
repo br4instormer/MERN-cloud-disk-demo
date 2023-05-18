@@ -34,21 +34,21 @@
 
 План:
 
-1. Создать volume для хранения базы данных MongoDB
-2. Запустить инстанс MongoDB в Docker-контейнере
-3. Удостовериться, что инстанс запущен
+1. [Создать volume для хранения базы данных MongoDB](#deploy-db-image-1)
+2. [Запустить инстанс MongoDB в Docker-контейнере](#deploy-db-image-2)
+3. [Удостовериться, что инстанс запущен](#deploy-db-image-3)
 
 ---
 
-1. В консоли выполнить команду `docker volume create dbdata`
-2. Выполнить команду `docker run --rm -d --name mongodb -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=dbpassword -v dbdata:/data/db -p 27017:27017 mongo`
+<a id="deploy-db-image-1"></a>1. В консоли выполнить команду `docker volume create dbdata`
+<a id="deploy-db-image-2"></a>2. Выполнить команду `docker run --rm -d --name mongodb -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=dbpassword -v dbdata:/data/db -p 27017:27017 mongo`
 
     Параметры окружения используемые для инициализации базы данных:
 
     * `MONGO_INITDB_ROOT_USERNAME` имя пользователя для доступа к базе
     * `MONGO_INITDB_ROOT_PASSWORD` пароль для доступа к базе
 
-3. Выполнить команду `docker container ls`
+<a id="deploy-db-image-3"></a>3. Выполнить команду `docker container ls`
 
     Контейнер `mongodb` должен присутствовать с списке
 
