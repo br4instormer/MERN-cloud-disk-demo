@@ -4,7 +4,7 @@
 
 ### Установка окружения
 
-* Установить [Node.js v14.5](https://nodejs.org/dist/v14.5.0/)
+* Установить [Node.js](https://nodejs.org/en/download). Тестировалось на v18.16
 
 ### Скачивание проекта
 
