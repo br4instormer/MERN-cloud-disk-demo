@@ -24,6 +24,11 @@
   }
   ```
 
+
+### Создание каталогов хранения файлов
+
+В сервисе `server` создать катталоги `files` и `static`. Либо иные, которые указаны в параметрах конфига `filePath` и `staticPath` соответственно.
+
 ### Установка Docker
 
 * [Скачать](https://www.docker.com/products/docker-desktop/) и установить Docker Desktop
